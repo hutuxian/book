@@ -63,7 +63,7 @@ YouTube是世界上最大的视频上传、分享和发现网站，YouTube个性
 对于一个用户$U$，预测此刻用户要观看的视频$\omega$为视频$i$的概率公式为：
 
 <p align="center">
-<img src="https://github.com/PaddlePaddle/book/blob/develop/05.recommender_system/image/formula1.png?raw=true" width="20%" ><br/>
+<img src="https://github.com/hutuxian/book/blob/book_demo/05.recommender_system/image/formula1.png?raw=true" width="20%" ><br/>
 </p>
 
 其中$u$为用户$U$的特征表示，$V$为视频库集合，$v_i$为视频库中第$i$个视频的特征表示。$u$和$v_i$为长度相等的向量，两者点积可以通过全连接层实现。
@@ -94,13 +94,13 @@ YouTube是世界上最大的视频上传、分享和发现网站，YouTube个性
 其次，进行卷积操作：把卷积核(kernel)$w\in\mathbb{R}^{hk}$应用于包含$h$个词的窗口$x_{i:i+h-1}$，得到特征$c_i=f(w\cdot x_{i:i+h-1}+b)$，其中$b\in\mathbb{R}$为偏置项（bias），$f$为非线性激活函数，如$sigmoid$。将卷积核应用于句子中所有的词窗口${x_{1:h},x_{2:h+1},\ldots,x_{n-h+1:n}}$，产生一个特征图（feature map）：
 
 <p align="center">
-<img src="https://github.com/PaddlePaddle/book/blob/develop/05.recommender_system/image/formula2.png?raw=true" width="40%" ><br/>
+<img src="https://github.com/hutuxian/book/blob/book_demo/05.recommender_system/image/formula2.png?raw=true" width="40%" ><br/>
 </p>
 
 接下来，对特征图采用时间维度上的最大池化（max pooling over time）操作得到此卷积核对应的整句话的特征$\hat c$，它是特征图中所有元素的最大值：
 
 <p align="center">
-<img src="https://github.com/PaddlePaddle/book/blob/develop/05.recommender_system/image/formula3.png?raw=true" width="15%" ><br/>
+<img src="https://github.com/hutuxian/book/blob/book_demo/05.recommender_system/image/formula3.png/formula3.png?raw=true" width="15%" ><br/>
 </p>
 
 #### 融合推荐模型概览
