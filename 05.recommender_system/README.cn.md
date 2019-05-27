@@ -100,7 +100,7 @@ YouTube是世界上最大的视频上传、分享和发现网站，YouTube个性
 接下来，对特征图采用时间维度上的最大池化（max pooling over time）操作得到此卷积核对应的整句话的特征$\hat c$，它是特征图中所有元素的最大值：
 
 <p align="center">
-<img src="https://github.com/hutuxian/book/blob/book_demo/05.recommender_system/image/formula3.png/formula3.png?raw=true" width="15%" ><br/>
+<img src="https://github.com/hutuxian/book/blob/book_demo/05.recommender_system/image/formula3.png?raw=true" width="15%" ><br/>
 </p>
 
 #### 融合推荐模型概览
